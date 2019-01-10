@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import ProductsContainer from './components/ProductsContainer';
+import FilterContainer from './components/FilterContainer';
 import './App.css';
+import productJson from './static/data/products';
+
 
 class App extends Component {
+
   render() {
+    let productList = productJson.products;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="appContainer"> 
+        <FilterContainer/>
+        <ProductsContainer products={productList} />
       </div>
     );
   }

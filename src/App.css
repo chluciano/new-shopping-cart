@@ -1,32 +1,62 @@
-.App {
-  text-align: center;
+.appContainer{
+  display:  flex;
+  flex-direction: row;
+  height:  100vh;
+  width:  100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.productsContainer{
+  display:  inherit;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  width: 85%;
+  float: left;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.productContainer {
+  width:  25%;
 }
 
-.App-link {
-  color: #61dafb;
+.productImage{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addToCartButton{
+    background-color: #1b1a20;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 90%;
+}
+
+
+.filterContainer{
+  display:  inherit;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  width: 15%;
+  height:  20%;
+}
+
+.filterButtons {
+
+}
+
+.filterButton {
+  background-color: #ececec;
+  width: 35px;
+  height: 35px;
+  border-radius:  50%;
+  margin-left: 10px;
+}
+
+.filtersAvailableSize{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.title{
+    margin: 2px 20px 0px 10px;
 }
